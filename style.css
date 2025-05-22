@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", serif;
+  
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.carousel-item img{
+    width: 100%;
+    height: 80vh;
+}
+
+@media (width<800px){
+    .carousel-item img{
+        height: 40vh;
+    }
+    .home-content-img{
+        width: 80%;
+    }
+}
+
+.logo-img img{
+    width: 200px;
+}
+
+.carousel-caption{
+    z-index: 1000;
+}
+
+.carousel-btn{
+    padding: 12px 58px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(33, 33, 246);
+    border: none;
+    font-size: 20px;
+}
+.carousel-btn:hover{
+    background-color: rgb(6, 6, 142);
+    transition: all 0.3s ease-in-out;
+}
+
+.cardd {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9; /* Light grayish white background */
+}
+
+.cardd:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cardd-img-top {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer; 
+}
+
+.cardd:hover .cardd-img-top {
+    transform: scale(1.1);
+}
+
+.cardd-content {
+    position: relative;
+    margin-top: 10px;
+    padding: 15px;
+    background: #f0f0f0; 
+    color: #333; 
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardd-content h5 {
+    margin: 0;
+    font-size: 18px; 
+}
+  
+.cardd:hover .cardd-content {
+    background: #e8e8e8; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    padding: 15px;
+    width: 50px;
+    height: 55px;
+    border-radius: 50%;
+    border: black 1px solid;
+}
+
+#scrollToTopBtn:hover {
+    color: #fff;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    width: 4rem;
+    height: 4rem;
+    background-color: #000;
+}
+
+.btn-border-reveal {
+    padding: 12px 14px;
+    background-color: transparent;
+    color: #22884e;
+    border: 2px solid #22884e;
+    position: relative;
+  }
+  
+  .btn-border-reveal::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #22884e;
+    transition: width 0.3s ease;
+    z-index: -1;
+  }
+  
+  .btn-border-reveal:hover::after {
+    width: 100%;
+  }
+  
+  .btn-border-reveal:hover {
+    color: white;
+  }
+
+  .fancy-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    position: relative;
+}
+
+.fancy-divider::before,
+.fancy-divider::after {
+    content: "";
+    flex-grow: 1;
+    height: 3px;
+    background: linear-gradient(to right, transparent, green, transparent);
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.fancy-divider span {
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+
+
+.whatsapp img{
+    width: 80px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 10px;
+    left: 15px;
+}
+
+.home-description{
+    text-align: start;
+    word-spacing: 10px;
+    font-size: 18px;
+}
+
+.navbar-custom {
+    background: #2c3e50 !important; /* Lacivert arka plan */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #f1c40f !important; /* Sarı hover efekti */
+    transform: scale(1.05);
+}
+
+.top-20{
+    top: 30px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.img-popup {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.img-popup img.popup-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.close-popup {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+    z-index: 1060;
+}
+
+.point{
+    cursor: pointer;
+}

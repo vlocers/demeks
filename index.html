@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <noscript>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </noscript>
+    <title>Demekstel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/cropped-Mavi-ve-Turuncu-Tipografik-ve-Modern-Kurumsal-Logo-192x192.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .carousel-btn-modern {
+            padding: 6px 18px;
+            font-size: 0.95rem;
+            border: none;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #1e90ff 0%, #00c6ff 100%);
+            color: #fff;
+            box-shadow: 0 2px 12px rgba(30, 144, 255, 0.15);
+            transition: all 0.3s, transform 0.2s, box-shadow 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 500;
+        }
+
+        .carousel-btn-modern:hover {
+            background: linear-gradient(90deg, #00c6ff 0%, #1e90ff 100%);
+            color: #fff;
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 4px 16px rgba(30, 144, 255, 0.25);
+            text-decoration: none;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="whatsapp" href="https://wa.me/905375777171?text=Merhaba,%20web%20sitenizden%20ulaşıyorum%20"
+        target="_blank"><img src="./img/whatsapp.png" alt=""></a>
+    <nav class="p-3 navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid ">
+            <a class="navbar-brand logo-img" href="index.html"><img
+                    src="./img/Mavi-ve-Turuncu-Tipografik-ve-Modern-Kurumsal-Logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="urunler.html">Ürünler</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide 80">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active "
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/urun10/image2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h1>Çim Çit</h1>
+                    <button class="carousel-btn-modern">
+                        <i class="fa-solid fa-magnifying-glass me-1"></i> İncele
+                    </button>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/urun10/image2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h5>Second slide label</h5>
+                     <button class="carousel-btn-modern">
+                        <i class="fa-solid fa-magnifying-glass me-1"></i> İncele
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/urun10/image2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h5>Third slide label</h5>
+                     <button class="carousel-btn-modern">
+                        <i class="fa-solid fa-magnifying-glass me-1"></i> İncele
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/urun10/image2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h5>Third slide label</h5>
+                     <button class="carousel-btn-modern">
+                        <i class="fa-solid fa-magnifying-glass me-1"></i> İncele
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon carousel-buton" aria-hidden="true"></span>
+            <span class="visually-hidden ">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon carousel-buton" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About Us Section -->
+    <section class="p-5 text-center">
+        <div class="container">
+            <h2 class="mt-3 mb-5 font-weight-bold"><i class="fa-solid fa-shop"></i> Örnek Ürünler</h2>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="cardd">
+                        <img src="img/urun1/image1.png" class="cardd-img-top">
+                        <div class="cardd-content">
+                            <h4>Jiletli Tel</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cardd">
+                        <img src="img/urun5/image1.png" class="cardd-img-top">
+                        <div class="cardd-content">
+                            <h4>Panjur Çit</h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cardd">
+                        <img src="img/urun10/image1.png" class="cardd-img-top">
+                        <div class="cardd-content">
+                            <h4>Pvc Kaplı Tel ve Kafes Tel</h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-center">
+                <a href="urunler.html"><button class="btn-border-reveal">Tüm Ürünleri İncele</button></a>
+
+            </div>
+    </section>
+
+
+    <div class="fancy-divider">
+        <span>✦✦✦</span>
+    </div>
+
+
+
+
+
+    <section class="p-5 text-center">
+        <div class="container">
+            <h1 class="pb-5"><i class="fa-solid fa-house"></i> Demekstel</h1>
+            <div class="row row-cols-1 row-cols-md-2 g-0">
+                <div class="home-description">
+                    <p>Demekstel Çit Fabrikası; tecrübesi ve uzun yıllara dayanan üretim ve montaj hizmetleri ile
+                        müşterilerinin gönlünde taht kurmuştur. Siz değerli müşterilerimizin talepleri doğrultusunda çit
+                        ve tel ihtiyaçlarını istenilen kalitede karşılamayı görev edindik.</p>
+                    <p>Sektörümüzde çit tedarik ve montaj firması olarak firmamız ilk günkü çalışma azmi ile sektörün en
+                        büyük sırları arasında yer almayı başarmıştır. Müşteri portföyü ile birlikte ülkemizin önde
+                        gelen inşaat firmalarına çit, özel imalat çit, spor sahaları ve çelik konstrüksiyon konusunda
+                        destek ve hizmet vermekteyiz.</p>
+                    <a href="blog.html"><button class="mt-5 mb-5 btn-border-reveal ">Blog'u incele</button></a>
+                </div>
+                <div>
+                    <img class="home-content-img" width="60%" src="./img/home-content.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 text-white bg-dark">
+        <div class="container">
+            <div class="text-center row text-md-start">
+                <div class="mb-4 col-md-4">
+                    <h5 class="fw-bold">Hakkımızda</h5>
+                    <p>Demekstel olarak kaliteli ürünler sunuyoruz. Müşteri memnuniyeti önceliğimizdir. Güvenilir ve
+                        yenilikçi çözümlerle hizmetinizdeyiz.</p>
+                </div>
+                <div class="mb-4 col-md-4">
+                    <h5 class="fw-bold">İletişim</h5>
+                    <p><i class="fa-solid fa-phone me-2"></i> +90 537 577 7171</p>
+                    <p><i class="fa-solid fa-envelope me-2"></i> info@demekstel.com</p>
+                    <p><i class="fa-solid fa-location-dot me-2"></i> İstanbul, Türkiye</p>
+                </div>
+                <div class="mb-4 col-md-4">
+                    <h5 class="fw-bold">Sosyal Medya</h5>
+                    <a href="#" class="text-white me-3 fs-5"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3 fs-5"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3 fs-5"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="mt-4 text-center">
+                <hr class="border-light">
+                <p class="mb-0">&copy; 2025 Demekstel. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script>
+
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+
+        window.onscroll = function () {
+            checkScroll();
+        };
+
+
+        function checkScroll() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+
+        scrollToTopBtn.addEventListener("click", function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+
+</body>
+
+</html>
